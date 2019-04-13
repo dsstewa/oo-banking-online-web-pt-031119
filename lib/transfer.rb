@@ -33,7 +33,7 @@ class Transfer
     if self.valid? && @receiver.balance > @amount && self.status == "complete"
       @receiver.balance -= amount
       @sender.balance += amount
-      self.status = "reversed"
+      self.@status = "reversed"
     end
     
   end
