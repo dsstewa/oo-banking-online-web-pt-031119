@@ -1,7 +1,7 @@
 require 'pry'
 class Transfer
   attr_reader :sender, :receiver, :status, :amount
-  
+  attr_writer :status
   def initialize(sender,receiver, amount)
     #binding.pry
     @sender = sender
