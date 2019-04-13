@@ -12,7 +12,7 @@ class Transfer
   
   def valid?
     binding.pry
-    @sender.valid? && @reciver.valid? ? true : false
+    @sender.valid? && @receiver.valid? ? true : false
   end
   
 end
